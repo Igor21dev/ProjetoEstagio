@@ -23,7 +23,7 @@
 
 ## DIAGRAMA ENTIDADE RELACIONAMENTO
 
-![diagrma](C:\Users\igors\Documentos\PROJETOS\ProjetoEstagio\diagrama EER.png)
+![diagrama](diagramaEER.png)
 
 ## Configurando o Projeto
 
