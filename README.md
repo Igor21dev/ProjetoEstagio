@@ -99,6 +99,7 @@ DB_PORT=3306
 DB_DATABASE=projeto_estagio
 DB_USERNAME=seu_username
 DB_PASSWORD=sua_password
+```
 
 
 4. Rodar o script de leitura do XML
