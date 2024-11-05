@@ -112,7 +112,7 @@ Para rodar o script é necessário:
 
 5. Caso haja erro rodar o comando abaixo onde o projeto tá localizado
 ```
-php artisan schedule:test app:importar-dados-xml
+php artisan app:importar-dados-xml
 ```
 a primeira salva o hotel e os quartos e a segunda vez roda as reservas, diárias, hóspedes e pagamentos 
 
@@ -156,16 +156,25 @@ http://127.0.0.1:8000/rooms
     http://127.0.0.1:8000/rooms/7
     ```
 
+7. Executando o POST de reservas
 
+ - Cria uma reserva
+ Com o método POST
+ ```
+http://127.0.0.1:8000/reserves
+ ```
+
+ Para criar uma reserva o corpo é:
+ ```
 {
     "roomCode": 1,
     "hotelCode": 2,
     "checkIn": "2024-11-10",
     "checkOut": "2024-11-15",
     "total": 200.00,
-    "guestName": "João",
-    "guestLastName": "Silva",
-    "guestPhone": "+55 11 91234-5678",
+    "guestName": "Igor",
+    "guestLastName": "Souza",
+    "guestPhone": "+55 77 91234-5678",
     "dailyDates": [
         "2024-11-10",
         "2024-11-11"
@@ -177,3 +186,5 @@ http://127.0.0.1:8000/rooms
     "paymentMethod": 1,
     "paymentValue": 100.00
 }
+ ```
+
