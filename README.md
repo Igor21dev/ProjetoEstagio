@@ -161,7 +161,7 @@ http://127.0.0.1:8000/rooms
    ```
    http://127.0.0.1:8000/rooms
    ```
-   Como será feita a requisição:
+   - Exemplo de corpo da requisição de criar quarto com o método POST::
    ```
    {
     "name": "teste",
@@ -173,7 +173,8 @@ http://127.0.0.1:8000/rooms
     ```
     http://127.0.0.1:8000/rooms/7
     ```
-    como sera feita a requisição:
+    - Exemplo de corpo da requisição de atualizar quarto
+    com o método PUT:
     ```
     {
     "name": "testando",
@@ -195,7 +196,7 @@ http://127.0.0.1:8000/rooms
 http://127.0.0.1:8000/reserves
  ```
 
- Para criar uma reserva o corpo é:
+ Para criar uma reserva o corpo da requisição é:
  ```
 {
     "roomCode": 1,
