@@ -161,13 +161,13 @@ http://127.0.0.1:8000/rooms
    ```
    http://127.0.0.1:8000/rooms
    ```
-   como sera feita a requisição:
+   Como será feita a requisição:
    ```
    {
     "name": "teste",
     "hotelCode": 1
    }
-
+   ```
     - Atualizar Quarto
     Com o método PUT:  
     ```
