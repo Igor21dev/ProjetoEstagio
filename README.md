@@ -169,24 +169,27 @@ http://127.0.0.1:8000/rooms
    }
    ```
 
-    - Atualizar Quarto
-    Com o método PUT:  
-
+- Atualizar Quarto
+Com o método PUT:  
+    ```
     http://127.0.0.1:8000/rooms/7
+    ```
 
-    - Exemplo de corpo da requisição de atualizar quarto
-    com o método PUT:
-
+- Exemplo de corpo da requisição de atualizar quarto
+com o método PUT:
+    ```
     {
     "name": "testando",
     "hotelCode": 1
-   }
+    }
+    ```
 
 
-    - Deletar um quarto
-    Com o método DELETE:
-
+- Deletar um quarto
+Com o método DELETE:
+    ```
     http://127.0.0.1:8000/rooms/7
+    ```
 
 
 ### 7. Executando o POST de reservas
