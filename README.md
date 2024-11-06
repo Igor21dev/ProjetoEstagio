@@ -4,7 +4,7 @@
 
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias-utilizadas)
-- [Instalação](#instalação)
+- [Configurando o Projeto](#instalação)
 
 ## Funcionalidades
 
@@ -26,13 +26,13 @@
 ![diagrama](diagramaEER.png)
 
 ## Configurando o Projeto
-1.Clonar o repositorio e usar:
+### 1.Clonar o repositorio e usar:
 ```
 git clone https://github.com/Igor21dev/ProjetoEstagio.git
 cd ProjetoEstagio
 ```
 
-2. criar um banco de dados mysql e rodar esse script:
+### 2. criar um banco de dados mysql e rodar esse script:
 ```
 create table projeto_estagio;
 use projeto_estagio;
@@ -91,7 +91,7 @@ CREATE TABLE payments (
 ```
 
 
-3. Configurar as variaveis de ambiente
+### 3. Configurar as variaveis de ambiente
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -102,19 +102,17 @@ DB_PASSWORD=sua_password
 ```
 
 
-4. Rodar o script de leitura do XML
+### 4. Rodar o script de leitura do XML
 
 Para rodar o script é necessário:
-### 1 - Criar uma tarefa no agendador de tarefas
-2 - Adicionar um nome a tarefa e marcar as opções "Executar somente quando o usuário estiver conectado" e "Executar com privilégios mais altos"
-3 - 
--Ir em disparadores, 
--criar um novo e selecionar no iniciar tarefa a opção "Em um agendamento"
+#### 1 - Criar uma tarefa no agendador de tarefas
+#### 2 - Adicionar um nome a tarefa e marcar as opções "Executar somente quando o usuário estiver conectado" e "Executar com privilégios mais altos"
+#### 3 - Ir em disparadores, 
+- criar um novo e selecionar no iniciar tarefa a opção "Em um agendamento"
 - Nas configurações escolher "diario" 
 -colocar o horário a dois minutos do atual
 -nas configurações avançadas marcar a opção repetir a tarefa a cada 1 minuto por um período de tempo de indefinidamente, selecionar habilitado e clicar em OK.
-4 - 
--Ir em ações criar um novo, e em Ação selecionar "Iniciar um programa"
+#### 4 -Ir em ações criar um novo, e em Ação selecionar "Iniciar um programa"
 -em programa/script adicionar o caminho do executavel do php que provavelmente será:
 ```
 C:\xampp\php\php.exe
@@ -133,7 +131,7 @@ C:\Users\igors\Documentos\PROJETOS\ProjetoEstagio
 ```
 e clique em OK
 
-5. Caso haja erro rodar o comando abaixo onde o projeto tá localizado
+### 5. Caso haja erro, rodar o comando abaixo onde o projeto tá localizado
 ```
 php artisan app:importar-dados-xml
 ```
@@ -144,7 +142,7 @@ php artisan schedule:run
 ## Observação:
 a primeira execução do comando salva o hotel e os quartos e a segunda vez roda as reservas, diárias, hóspedes e pagamentos já que pra salvar as reservas é necessário o hotel e o quarto
 
-6. Executando o CRUD de Quartos
+### 6. Executando o CRUD de Quartos
  - Listar Quartos  
  Com o metodo GET: 
  ```
@@ -184,7 +182,7 @@ http://127.0.0.1:8000/rooms
     http://127.0.0.1:8000/rooms/7
     ```
 
-7. Executando o POST de reservas
+### 7. Executando o POST de reservas
 
  - Cria uma reserva
  Com o método POST
