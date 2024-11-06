@@ -110,10 +110,11 @@ Para rodar o script é necessário:
 #### 3 - Ir em disparadores, 
 - criar um novo e selecionar no iniciar tarefa a opção "Em um agendamento"
 - Nas configurações escolher "diario" 
--colocar o horário a dois minutos do atual
--nas configurações avançadas marcar a opção repetir a tarefa a cada 1 minuto por um período de tempo de indefinidamente, selecionar habilitado e clicar em OK.
-#### 4 -Ir em ações criar um novo, e em Ação selecionar "Iniciar um programa"
--em programa/script adicionar o caminho do executavel do php que provavelmente será:
+- colocar o horário a dois minutos do atual
+- nas configurações avançadas marcar a opção repetir a tarefa a cada 1 minuto por um período de tempo de indefinidamente, selecionar habilitado e clicar em OK.
+#### 4 -Ir em ações
+- Clicar em novo, e em Ação selecionar "Iniciar um programa"
+- em programa/script adicionar o caminho do executavel do php que provavelmente será:
 ```
 C:\xampp\php\php.exe
 ```
