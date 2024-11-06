@@ -105,7 +105,7 @@ DB_PASSWORD=sua_password
 4. Rodar o script de leitura do XML
 
 Para rodar o script é necessário:
-1 - Criar uma tarefa no agendador de tarefas
+### 1 - Criar uma tarefa no agendador de tarefas
 2 - Adicionar um nome a tarefa e marcar as opções "Executar somente quando o usuário estiver conectado" e "Executar com privilégios mais altos"
 3 - 
 -Ir em disparadores, 
