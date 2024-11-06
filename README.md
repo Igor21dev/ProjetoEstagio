@@ -161,14 +161,14 @@ http://127.0.0.1:8000/rooms
    ```
    http://127.0.0.1:8000/rooms
    ```
-   - Exemplo de corpo da requisição de criar quarto com o método POST::
+   - Exemplo de corpo da requisição de criar quarto com o método POST:
    ```
    {
     "name": "teste",
     "hotelCode": 1
    }
    ```
-   
+
     - Atualizar Quarto
     Com o método PUT:  
     ```
