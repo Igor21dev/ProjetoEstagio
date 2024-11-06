@@ -167,7 +167,7 @@ http://127.0.0.1:8000/rooms
     "name": "teste",
     "hotelCode": 1
    }
-   ```
+
     - Atualizar Quarto
     Com o método PUT:  
     ```
