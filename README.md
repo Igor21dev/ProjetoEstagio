@@ -106,15 +106,43 @@ DB_PASSWORD=sua_password
 
 Para rodar o script é necessário:
 1 - Criar uma tarefa no agendador de tarefas
-2 - Adicionar um nome a tarefa e marcar a opção "Executar com privilégios mais altos"
-3 - Ir em disparadores, criar um novo e selecionar iniciar tarefa em agendamento, diario e clicar em OK.
-4 - Ir em ações, criar um novo, Ação é iniciar um programa, em programa/script adicionar o caminho do arquivo que possui o script, em adicionar argumentos adicionar "artisan schedule:run" e em iniciar o diretorio do projeto.
+2 - Adicionar um nome a tarefa e marcar as opções "Executar somente quando o usuário estiver conectado" e "Executar com privilégios mais altos"
+3 - 
+-Ir em disparadores, 
+-criar um novo e selecionar no iniciar tarefa a opção "Em um agendamento"
+- Nas configurações escolher "diario" 
+-colocar o horário a dois minutos do atual
+-nas configurações avançadas marcar a opção repetir a tarefa a cada 1 minuto por um período de tempo de indefinidamente, selecionar habilitado e clicar em OK.
+4 - 
+-Ir em ações criar um novo, e em Ação selecionar "Iniciar um programa"
+-em programa/script adicionar o caminho do executavel do php que provavelmente será:
+```
+C:\xampp\php\php.exe
+```
+caso esteja em dúvida coloque no terminal esse comando para descobrir o caminho do executável do php:
+```
+where php
+```
+em Adicione argumentos(opcional) adicionar 
+```
+"artisan schedule:run" 
+```
+em iniciar o diretorio do projeto coloque o caminho onde o projeto tá localizado, exemplo:
+```
+C:\Users\igors\Documentos\PROJETOS\ProjetoEstagio
+```
+e clique em OK
 
 5. Caso haja erro rodar o comando abaixo onde o projeto tá localizado
 ```
 php artisan app:importar-dados-xml
 ```
-a primeira salva o hotel e os quartos e a segunda vez roda as reservas, diárias, hóspedes e pagamentos 
+ou
+```
+php artisan schedule:run
+```
+## Observação:
+a primeira execução do comando salva o hotel e os quartos e a segunda vez roda as reservas, diárias, hóspedes e pagamentos já que pra salvar as reservas é necessário o hotel e o quarto
 
 6. Executando o CRUD de Quartos
  - Listar Quartos  

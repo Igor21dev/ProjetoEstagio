@@ -9,6 +9,7 @@ use App\Models\Hotel;
 use App\Models\Reserve;
 use App\Models\Guest;
 use App\Models\Payment;
+use Log;
 
 
 class ImportarDadosXml extends Command
@@ -32,6 +33,7 @@ class ImportarDadosXml extends Command
      */
     public function handle()
     {
+        Log::info('Iniciando a importação dos dados XML');
         $hotelXmlPath = storage_path('app/xml/hotels.xml');
         $reservesXmlPath = storage_path('app/xml/reserves.xml');
         $roomsXmlPath = storage_path('app/xml/rooms.xml');
@@ -41,6 +43,7 @@ class ImportarDadosXml extends Command
         $this->importarRooms ($roomsXmlPath);
 
         $this->info('Importação concluída.');
+        Log::info('Importação concluída');
     }
 
     private function importarHotels($xmlPath){

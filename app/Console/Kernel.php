@@ -5,7 +5,6 @@ namespace App\Console;
 use App;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use App\Console\Commands;
 use App\Console\Commands\ImportarDadosXml;
 
 class Kernel extends ConsoleKernel
