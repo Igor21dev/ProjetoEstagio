@@ -151,26 +151,30 @@ http://127.0.0.1:8000/rooms
  ```
 
   - Listar Quarto específico
-  Com o método GET
+  Com o método GET:
   ```
   http://127.0.0.1:8000/rooms/2
   ```
 
    - Criar Quarto
-   Com o método POST
+   Com o método POST:
    ```
    http://127.0.0.1:8000/rooms
+   ```
    como sera feita a requisição:
+   ```
    {
     "name": "teste",
     "hotelCode": 1
    }
    ```
     - Atualizar Quarto
-    Com o método PUT  
+    Com o método PUT:  
     ```
     http://127.0.0.1:8000/rooms/7
+    ```
     como sera feita a requisição:
+    ```
     {
     "name": "testando",
     "hotelCode": 1
@@ -178,7 +182,7 @@ http://127.0.0.1:8000/rooms
     ```
 
     - Deletar um quarto
-    Com o método DELETE
+    Com o método DELETE:
     ```
     http://127.0.0.1:8000/rooms/7
     ```
@@ -186,7 +190,7 @@ http://127.0.0.1:8000/rooms
 ### 7. Executando o POST de reservas
 
  - Cria uma reserva
- Com o método POST
+ Com o método POST:
  ```
 http://127.0.0.1:8000/reserves
  ```
