@@ -140,7 +140,7 @@ ou
 ```
 php artisan schedule:run
 ```
-## Observação:
+### Observação:
 a primeira execução do comando salva o hotel e os quartos e a segunda vez roda as reservas, diárias, hóspedes e pagamentos já que pra salvar as reservas é necessário o hotel e o quarto
 
 ### 6. Executando o CRUD de Quartos
